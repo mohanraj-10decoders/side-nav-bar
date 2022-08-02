@@ -1,0 +1,45 @@
+[
+    {
+        "name": "General",
+        "children": [
+            {
+                "name": "Home",
+                "path": "/home"
+            },
+            {
+                "name": "About",
+                "path": "/about"
+            },
+            {
+                "name": "Contact",
+                "children": [
+                    {
+                        "name": "Facebook",
+                        "path": "/facebook"
+                    },
+                    {
+                        "name": "Twitter",
+                        "path": "/twitter"
+                    },
+                    {
+                        "name": "Instagram",
+                        "path": "/instagram"
+                        
+                    }
+                ]
+            },
+            {
+                "name": "FAQ",
+                "path": "/faq"                
+            }
+        ]
+    },
+    {
+        "name": "Support",
+        "path": "/support"
+    },
+    {
+        "name": "Summary",
+        "path": "/summary"
+    }
+]
