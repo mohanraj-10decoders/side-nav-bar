@@ -1,45 +1,57 @@
 [
-    {
-        "name": "General",
+  {
+    "name": "General",
+    "children": [
+      {
+        "name": "Home",
+        "path": "/home"
+      },
+      {
+        "name": "About",
+        "path": "/about"
+      },
+      {
+        "name": "Contact",
         "children": [
-            {
-                "name": "Home",
-                "path": "/home"
-            },
-            {
-                "name": "About",
-                "path": "/about"
-            },
-            {
-                "name": "Contact",
-                "children": [
-                    {
-                        "name": "Facebook",
-                        "path": "/facebook"
-                    },
-                    {
-                        "name": "Twitter",
-                        "path": "/twitter"
-                    },
-                    {
-                        "name": "Instagram",
-                        "path": "/instagram"
-                        
-                    }
-                ]
-            },
-            {
-                "name": "FAQ",
-                "path": "/faq"                
-            }
+          {
+            "name": "Email",
+            "path": "/email"
+          },
+          {
+            "name": "Mobile",
+            "path": "/mobile"
+          },
+          {
+            "name": "Social Media",
+            "children": [
+              {
+                "name": "Facebook",
+                "path": "/facebook"
+              },
+              {
+                "name": "Instagram",
+                "path": "/instagram"
+              },
+              {
+                "name": "Twitter",
+                "path": "/twitter"
+              }
+            ]
+          }
         ]
-    },
-    {
-        "name": "Support",
-        "path": "/support"
-    },
-    {
-        "name": "Summary",
-        "path": "/summary"
-    }
+      },
+      {
+        "name": "FAQ",
+        "path": "/faq"
+      }
+    ]
+  },
+  {
+    "name": "Support",
+    "path": "/support"
+  },
+  {
+    "name": "Summary",
+    "path": "/summary"
+  }
 ]

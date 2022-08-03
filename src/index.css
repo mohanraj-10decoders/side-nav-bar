@@ -4,7 +4,7 @@ body {
   background-color: lightgray;
 }
 .allMenus{
-  height: 90vh;
+  height: 85vh;
   overflow-y: auto;
 }
 ul{
@@ -23,6 +23,10 @@ ul{
 .multipleHeader{
   display: flex;
   justify-content: space-between;
+}
+.multipleHeader:hover{
+  cursor: pointer;
+  background-color: gray;
 }
 .singleHeader:hover{
   background-color: gray;
@@ -47,8 +51,42 @@ span:hover{
 
 ul a{
   padding: 0 !important;
-  color: black;
+  color: black !important;
 }
 .linkActive{
   background-color: lightcoral !important;
+}
+.multipleHeader + div > ul{
+   padding-left: 0.5vw;
+}
+.menuButton{
+  display: none;
+}
+.sideBarContainer{
+  /* display: none; */
+}
+
+@media(max-width:575px) {
+  .menuButton{
+    display: block;
+    width: max-content;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 1;
+    height: 40px;
+  }
+  .sideBarHeader{
+    visibility: hidden;
+  }
+  /* .sideBar{
+    display: none;
+  } */
+  /* .sideBarContainer{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  } */
 }

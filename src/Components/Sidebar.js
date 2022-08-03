@@ -10,7 +10,6 @@ export default function Sidebar() {
       <div className='sideBarHeader'>Side Bar</div>
       <ul className='allMenus'>
         {items.map((item, index) => {
-          console.log('ITEM', item);
           if (item.children)
             return (
               <MultipleMenu
@@ -48,14 +47,14 @@ function MultipleMenu({ name, children }) {
   const [show, setShow] = useState(false);
   return (
     <li className='multipleList'>
-      <section className='multipleHeader'>
+      <section
+        className='multipleHeader'
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
         <div>{name}</div>
-        <span
-          onClick={() => {
-            setShow(!show);
-            console.log(!show);
-          }}
-        >
+        <span>
           {show ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
         </span>
       </section>
